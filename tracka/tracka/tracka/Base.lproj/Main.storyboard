@@ -18,33 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-mB-rn5">
-                                <rect key="frame" x="65" y="153" width="183" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-mB-rn5">
+                                <rect key="frame" x="0.0" y="200" width="314" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.34833592176437378" green="0.76663047075271606" blue="0.22335651516914368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Go to other ViewController"/>
                                 <connections>
                                     <segue destination="l5o-71-FTt" kind="show" identifier="ShowCounterSegue" id="5KJ-7f-irU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-La-BOp">
-                                <rect key="frame" x="69" y="202" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-La-BOp">
+                                <rect key="frame" x="0.0" y="94" width="68" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.26251020734194691" green="0.76404630829015541" blue="0.16326494547626805" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="PWZ-wC-4JW" kind="show" identifier="showLoginSegue" id="NZj-tx-APB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-cU-a34">
-                                <rect key="frame" x="44" y="249" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-cU-a34">
+                                <rect key="frame" x="0.0" y="147" width="151" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.34833592176437378" green="0.76663047075271606" blue="0.22335651516914368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="RezepteListe"/>
                                 <connections>
                                     <segue destination="PAO-j6-hVr" kind="show" identifier="showListSegue" id="ynj-0h-9kH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3i-SE-ecB">
-                                <rect key="frame" x="65" y="325" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3i-SE-ecB">
+                                <rect key="frame" x="0.0" y="236" width="94" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.34833592176437378" green="0.76663047075271606" blue="0.22335651516914368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Counter"/>
                                 <connections>
                                     <action selector="counterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUJ-AZ-eUr"/>
@@ -63,7 +73,6 @@
         <!--Rezepte Liste View Controller-->
         <scene sceneID="IBJ-3u-VcH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tY4-bH-pae" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="PAO-j6-hVr" customClass="RezepteListeViewController" customModule="tracka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnU-ct-cka">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -135,6 +144,7 @@
                         <segue destination="Cgk-Pp-VS1" kind="show" identifier="showEntrySegue" id="2hT-fG-FI2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tY4-bH-pae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="384.80000000000001" y="841.52923538230891"/>
         </scene>
@@ -291,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-Ug-0yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="842"/>
+            <point key="canvasLocation" x="-138" y="134"/>
         </scene>
         <!--Other View Controller-->
         <scene sceneID="wxZ-AQ-adU">

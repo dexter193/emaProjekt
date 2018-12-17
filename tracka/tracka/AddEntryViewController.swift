@@ -95,7 +95,7 @@ class AddEntryViewController: UIViewController {
         let foodNameCast = FoodNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let descriptionCast = DescriptionTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let instructionsCast = InstructionsTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let difficultyCast = DifficultyTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       
         let urlCast = URLTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         
@@ -149,11 +149,11 @@ class AddEntryViewController: UIViewController {
         }
         print("74")
         //emptying the textfields
-        print(description)
+        print(description!)
         FoodNameTextField.text=""
         DescriptionTextField.text=""
         InstructionsTextField.text=""
-        DifficultyTextField.text=""
+        
         URLTextField.text=""
         
         
